@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Plataforma SAFE</title>
+    <title>Visitas médicas | Supervisor</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
         .navbar-custom {
@@ -32,23 +32,20 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-custom">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Plataforma SAFE</a>
+            <a class="navbar-brand" href="{% url 'home_supervisor' %}">Plataforma SAFE</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav me-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Mis Evaluaciones</a>
+                        <a class="nav-link" href="{% url 'evaluaciones_supervisor' %}">Evaluaciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Solicitar Servicios</a>
+                        <a class="nav-link" href="{% url 'capacitaciones_supervisor' %}">Capacitaciones</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Capacitaciones</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Visitas Médicas</a>
+                        <a class="nav-link" href="{% url 'visitas_medicas_supervisor' %}">Visitas Médicas</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav ms-auto">
@@ -64,15 +61,7 @@
     </nav>
 
     <!-- Case Detail Box -->
-    <div class="container mt-5">
-        <div class="case-box">
-            <h4 class="case-title">Nombre del Caso: Evaluación de Riesgos en Empresa XYZ</h4>
-            <p><strong>Número de Caso:</strong> 2024-ER-0156</p>
-            <p><strong>Estado del Caso:</strong> En proceso</p>
-            <p><strong>Última Actualización:</strong> 15 de mayo de 2024</p>
-            <a href="#" class="btn btn-details">Ver Detalles</a>
-        </div>
-    </div>
+    <h1 class="text-center mt-5">VISITAS MÉDICAS</h1>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
